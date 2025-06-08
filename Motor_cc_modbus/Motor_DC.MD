@@ -1,6 +1,6 @@
 # Controle PID com Arduino via Modbus RTU
 
-Este projeto implementa um sistema de controle PID de velocidade de motor DC com **leitura via encoder rotativo hall**, controle de potência por **PWM**, e comunicação **Modbus RTU** com supervisório SCADA (como o LAquis SCADA). ([Código de imentação](Motor_cc_modbus/Motor_cc_modbus.ino)).
+Este projeto implementa um sistema de controle PID de velocidade de motor DC com **leitura via encoder rotativo hall**, controle de potência por **PWM**, e comunicação **Modbus RTU** com supervisório SCADA (como o LAquis SCADA). ([Código de imentação](Motor_cc_modbus.ino)).
 
 ## Bibliotecas Utilizadas
 
