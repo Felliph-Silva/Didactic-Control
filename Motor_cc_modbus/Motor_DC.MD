@@ -1,6 +1,6 @@
 # Controle PID com Arduino via Modbus RTU
 
-Este projeto implementa um sistema de controle PID de velocidade de motor DC com **leitura via encoder incremental**, controle de potência por **PWM**, e comunicação **Modbus RTU** com supervisório SCADA (como o LAquis SCADA).
+Este projeto implementa um sistema de controle PID de velocidade de motor DC com **leitura via encoder rotativo hall**, controle de potência por **PWM**, e comunicação **Modbus RTU** com supervisório SCADA (como o LAquis SCADA). ([Código de imentação](Motor_cc_modbus/Motor_cc_modbus.ino)).
 
 ## Bibliotecas Utilizadas
 
@@ -25,7 +25,7 @@ Este projeto implementa um sistema de controle PID de velocidade de motor DC com
 
 ### 1. **Leitura do Encoder**
 
-* O encoder incremental é lido via **interrupção** no pino `ENCA`.
+* O encoder rotativo é lido via **interrupção** no pino `ENCA`.
 * A direção é determinada com base no valor do pino `ENCB`.
 
 ```cpp
@@ -152,6 +152,6 @@ Esse código pode ser usado com ferramentas como o **LAquis SCADA** para:
 
 * Arduino UNO, Nano ou Mega.
 * Ponte H (ex: L298N).
-* Motor DC com encoder incremental.
+* Motor DC com encoder rotativo hall.
 * Fonte de alimentação adequada.
 * Conversor USB-RS485 (se for usar RS485 físico).
